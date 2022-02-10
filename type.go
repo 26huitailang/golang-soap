@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/jackyshaw2017/golang-soap/xsd"
+	"github.com/26huitailang/golang-soap/xsd"
 )
 
 func checkBaseTypeKind(k reflect.Kind) (string, error) {

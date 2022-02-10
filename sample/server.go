@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	gosoap "github.com/jackyshaw2017/golang-soap"
+	gosoap "github.com/26huitailang/golang-soap"
 )
 
 // 简单的
@@ -44,8 +44,8 @@ func (d *DataList) Action() *gosoap.SoapFault {
 }
 
 func main() {
-	s := gosoap.NewServer("192.168.2.50", "people")
+	s := gosoap.NewServer("0.0.0.0", "services/testWS")
 	s.Register(new(User), new(DataList))
 
-	panic(s.Service("8080"))
+	panic(s.Service("8082"))
 }
